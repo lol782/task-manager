@@ -1,0 +1,154 @@
+/* Custom CSS for System Task Manager */
+
+/* Overall theme settings */
+:root {
+    --primary-color: #1E88E5;
+    --secondary-color: #81D4FA;
+    --accent-color: #4CAF50;
+    --warning-color: #FF9800;
+    --danger-color: #F44336;
+    --dark-bg: #121212;
+    --card-bg: #1E1E1E;
+    --text-color: #FFFFFF;
+    --text-secondary: #B0BEC5;
+}
+
+/* Override default Streamlit styling */
+.stApp {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+}
+
+/* Make header more prominent */
+h1, h2, h3 {
+    color: var(--text-color) !important;
+    font-weight: 600 !important;
+}
+
+/* Style for metric cards */
+div.stMetric {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Style for metrics with positive delta */
+div.stMetric [data-testid="stMetricDelta"] svg[data-testid="stMetricDeltaIcon"] {
+    color: var(--accent-color) !important;
+}
+
+/* Style for metrics with negative delta */
+div.stMetric [data-testid="stMetricDelta"].negative svg[data-testid="stMetricDeltaIcon"] {
+    color: var(--danger-color) !important;
+}
+
+/* Style for data tables and dataframes */
+div[data-testid="stTable"], .stDataFrame {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Style table headers */
+div[data-testid="stTable"] th, .stDataFrame th {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+/* Style table rows */
+div[data-testid="stTable"] td, .stDataFrame td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Style for progress bars */
+div[role="progressbar"] > div {
+    background-color: var(--primary-color) !important;
+}
+
+/* Style for tabs */
+button[data-baseweb="tab"] {
+    background-color: transparent !important;
+    color: var(--text-secondary) !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    background-color: rgba(30, 136, 229, 0.2) !important;
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+}
+
+/* Style for buttons */
+button.stButton > button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button.stButton > button:hover {
+    background-color: #1976D2;
+}
+
+/* Style for error button */
+button.stButton.terminate > button {
+    background-color: var(--danger-color);
+}
+
+button.stButton.terminate > button:hover {
+    background-color: #D32F2F;
+}
+
+/* Style for sidebar */
+section[data-testid="stSidebar"] {
+    background-color: var(--card-bg);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+section[data-testid="stSidebar"] h1 {
+    color: var(--primary-color) !important;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Style for expanders */
+details {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+details summary {
+    padding: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Style for success messages */
+div[data-baseweb="notification"] {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+}
+
+/* Style for error messages */
+div[data-baseweb="notification"].error {
+    background-color: var(--danger-color);
+}
+
+/* Fix footer */
+footer {
+    visibility: hidden;
+}
+
+/* Custom footer */
+div[data-testid="stVerticalBlock"] > div:last-child {
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    text-align: center;
+}

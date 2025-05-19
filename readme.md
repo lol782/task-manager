@@ -1,5 +1,3 @@
-Sure! Here's a clean and professional version of your **README.md** for the **System Task Manager** project:
-
 ---
 
 # 🖥️ System Task Manager

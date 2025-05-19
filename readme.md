@@ -1,83 +1,160 @@
-System Task Manager
-A comprehensive task manager built with Streamlit that provides detailed system monitoring and process management capabilities.
+Sure! Here's a clean and professional version of your **README.md** for the **System Task Manager** project:
 
-Show Image
+---
 
-Features
-Real-time system monitoring:
-CPU usage (overall and per-core)
-Memory usage (RAM and swap)
-Disk usage and I/O statistics
-Network traffic and connections
-Process management:
-View all running processes
-Sort and filter processes
-Terminate processes
-Detailed process information
-System information:
-Detailed hardware specifications
-Operating system details
-Network interfaces
-Users and login information
-Interactive UI:
-Customizable refresh rate
-Different views for specific monitoring needs
-Easy navigation through tabs
-Responsive design
-Installation
-Prerequisites
-Python 3.7 or higher
-pip (Python package installer)
-Setup
-Clone this repository:
-bash
-git clone https://github.com/yourusername/task-manager-streamlit.git
-cd task-manager-streamlit
-Create a virtual environment (optional but recommended):
-bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
-bash
-pip install -r requirements.txt
-Usage
-Start the Streamlit application:
-bash
-streamlit run app.py
-Open your browser and navigate to:
-http://localhost:8501
-Views
-Dashboard: Overview of system resources and top processes
-Processes: Complete list of running processes with management options
-System Information: Detailed information about your hardware and OS
-Disk Usage: Storage utilization and I/O statistics
-Network Statistics: Network interfaces, connections, and traffic
-Note on Permissions
-Some system monitoring features require elevated permissions:
+# 🖥️ System Task Manager
 
-Linux/macOS: You may need to run the application with sudo for full functionality
-Windows: Run as Administrator for complete access to all processes
-Customization
-You can customize the appearance by modifying the assets/style.css file.
+A powerful and interactive task manager built with **Streamlit**, offering real-time system monitoring, process management, and hardware insights in a sleek web-based UI.
 
-Dependencies
-Streamlit - Web application framework
-psutil - Process and system utilities
-pandas - Data manipulation and analysis
-matplotlib - Data visualization (optional)
-plotly - Interactive visualizations (optional)
-Project Structure
+![System Task Manager Screenshot](https://via.placeholder.com/800x450?text=System+Task+Manager+Screenshot)
+
+---
+
+## 🚀 Features
+
+### 🔧 Real-time System Monitoring
+
+* **CPU usage** – Total and per-core usage.
+* **Memory** – RAM and swap utilization.
+* **Disk** – Usage stats and I/O rates.
+* **Network** – Traffic, interfaces, and active connections.
+
+### 📋 Process Management
+
+* View all running processes.
+* Sort, search, and filter.
+* Terminate selected processes.
+* Access detailed process information.
+
+### 🖥️ System Information
+
+* Hardware specifications.
+* OS details and version.
+* Network interface information.
+* Current user sessions and logins.
+
+### 🧩 Interactive UI
+
+* Tab-based navigation.
+* Customizable refresh rate.
+* Clean and responsive layout.
+
+---
+
+## 🛠️ Installation
+
+### 🔍 Prerequisites
+
+* Python 3.7+
+* `pip` package manager
+
+### ⚙️ Setup
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/task-manager-streamlit.git
+   cd task-manager-streamlit
+   ```
+
+2. **Create a virtual environment** (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## ▶️ Usage
+
+1. **Run the application**:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+2. **Open in browser**:
+
+   ```
+   http://localhost:8501
+   ```
+
+---
+
+## 🧭 Application Views
+
+| View              | Description                                      |
+| ----------------- | ------------------------------------------------ |
+| **Dashboard**     | Overview of system performance and top processes |
+| **Processes**     | View, filter, and manage running processes       |
+| **System Info**   | Detailed OS and hardware information             |
+| **Disk Usage**    | Disk partition stats and I/O performance         |
+| **Network Stats** | Live interface traffic and network connections   |
+
+---
+
+## 🔐 Permissions
+
+Some features require elevated privileges:
+
+* **Linux/macOS**: Use `sudo` for full access to all processes.
+* **Windows**: Run as **Administrator** for complete process control.
+
+---
+
+## 🎨 Customization
+
+Modify the UI appearance via:
+
+```
+assets/style.css
+```
+
+---
+
+## 📦 Dependencies
+
+* [Streamlit](https://streamlit.io/) – UI framework
+* [psutil](https://github.com/giampaolo/psutil) – System/process data
+* [pandas](https://pandas.pydata.org/) – Data wrangling
+* [matplotlib](https://matplotlib.org/) – Visualization (optional)
+* [plotly](https://plotly.com/python/) – Interactive charts (optional)
+
+---
+
+## 📁 Project Structure
+
+```
 task_manager_streamlit/
-├── app.py                        # Main Streamlit app
-├── process_utils.py              # Utility functions for process handling
-├── system_stats.py               # Functions for CPU, RAM, Disk, Network info
-├── requirements.txt              # Python dependencies
+├── app.py                # Main Streamlit application
+├── process_utils.py      # Utilities for process management
+├── system_stats.py       # Functions for gathering system stats
+├── requirements.txt      # Python dependencies
 ├── assets/
-│   └── style.css                 # Custom CSS styling
-└── README.md                     # Project overview
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+│   └── style.css         # Custom styles
+└── README.md             # Project documentation
+```
 
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+---
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Contributions, bug reports, and feature requests are welcome.
+Feel free to fork the repo and submit a Pull Request!
+
+---
+
+Let me know if you'd like a version with badges (e.g., Python version, license, etc.) or markdown enhancements like collapsible sections.

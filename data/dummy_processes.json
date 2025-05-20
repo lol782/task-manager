@@ -1,0 +1,67 @@
+{
+  "processes": [
+    {
+      "pid": 1001,
+      "name": "System",
+      "status": "Running",
+      "cpu_usage": 25,
+      "memory_usage": 40,
+      "priority": 10,
+      "start_time": 1716376260
+    },
+    {
+      "pid": 1002,
+      "name": "Browser",
+      "status": "Running",
+      "cpu_usage": 35,
+      "memory_usage": 60,
+      "priority": 7,
+      "start_time": 1716376320
+    },
+    {
+      "pid": 1003,
+      "name": "IDE",
+      "status": "Waiting",
+      "cpu_usage": 5,
+      "memory_usage": 30,
+      "priority": 5,
+      "start_time": 1716376380
+    },
+    {
+      "pid": 1004,
+      "name": "Background Service",
+      "status": "Stopped",
+      "cpu_usage": 0,
+      "memory_usage": 15,
+      "priority": 3,
+      "start_time": 1716376440
+    },
+    {
+      "pid": 1005,
+      "name": "Media Player",
+      "status": "Running",
+      "cpu_usage": 20,
+      "memory_usage": 45,
+      "priority": 6,
+      "start_time": 1716376500
+    },
+    {
+      "pid": 1006,
+      "name": "File Indexer",
+      "status": "Waiting",
+      "cpu_usage": 10,
+      "memory_usage": 25,
+      "priority": 4,
+      "start_time": 1716376560
+    },
+    {
+      "pid": 1007,
+      "name": "Antivirus Scanner",
+      "status": "Running",
+      "cpu_usage": 30,
+      "memory_usage": 35,
+      "priority": 8,
+      "start_time": 1716376620
+    }
+  ]
+}

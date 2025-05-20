@@ -14,7 +14,6 @@ A powerful and interactive task manager built with **Streamlit**, offering real-
 
 * **CPU usage** – Total and per-core usage.
 * **Memory** – RAM and swap utilization.
-* **Disk** – Usage stats and I/O rates.
 * **Network** – Traffic, interfaces, and active connections.
 
 ### 📋 Process Management
@@ -22,7 +21,7 @@ A powerful and interactive task manager built with **Streamlit**, offering real-
 * View all running processes.
 * Sort, search, and filter.
 * Terminate selected processes.
-* Access detailed process information.
+* cutomised process sheduling algorithms,vizulaise also
 
 ### 🖥️ System Information
 
@@ -75,7 +74,7 @@ A powerful and interactive task manager built with **Streamlit**, offering real-
 1. **Run the application**:
 
    ```bash
-   streamlit run app.py
+   streamlit run main.py
    ```
 
 2. **Open in browser**:
@@ -91,9 +90,9 @@ A powerful and interactive task manager built with **Streamlit**, offering real-
 | View              | Description                                      |
 | ----------------- | ------------------------------------------------ |
 | **Dashboard**     | Overview of system performance and top processes |
-| **Processes**     | View, filter, and manage running processes       |
+| **Processes**     | View, filter, and manage running processes with  |
+|                     customise process sheduling algorithm            |
 | **System Info**   | Detailed OS and hardware information             |
-| **Disk Usage**    | Disk partition stats and I/O performance         |
 | **Network Stats** | Live interface traffic and network connections   |
 
 ---
@@ -120,7 +119,6 @@ assets/style.css
 ## 📦 Dependencies
 
 * [Streamlit](https://streamlit.io/) – UI framework
-* [psutil](https://github.com/giampaolo/psutil) – System/process data
 * [pandas](https://pandas.pydata.org/) – Data wrangling
 * [matplotlib](https://matplotlib.org/) – Visualization (optional)
 * [plotly](https://plotly.com/python/) – Interactive charts (optional)
@@ -130,14 +128,32 @@ assets/style.css
 ## 📁 Project Structure
 
 ```
-task_manager_streamlit/
-├── app.py                # Main Streamlit application
-├── process_utils.py      # Utilities for process management
-├── system_stats.py       # Functions for gathering system stats
-├── requirements.txt      # Python dependencies
-├── assets/
-│   └── style.css         # Custom styles
-└── README.md             # Project documentation
+task_manager_sim/
+│
+├── main.py                        # Streamlit app entry point
+├── requirements.txt
+│
+├── core/
+│   ├── __init__.py
+│   ├── process_manager.py         # CRUD for processes
+│   ├── scheduler.py               # Scheduling algorithms
+│   ├── resource_analyzer.py       # CPU/Memory usage calculations
+│   └── network.py                 # Network usage simulation or stats
+│
+├── data/
+│   └── dummy_processes.json       # Predefined dummy process set
+│
+├── ui/
+│   ├── __init__.py
+│   ├── dashboard.py               # Gantt chart, memory, CPU, network
+│   ├── process_table.py           # Process list
+│   └── control_panel.py           # Add/start/stop process
+│
+└── utils/
+    ├── __init__.py
+    ├── visualizer.py              # Gantt, memory, CPU, network graphs
+    └── helpers.py                 # ID generator, time, format utils
+
 ```
 
 ---

@@ -50,8 +50,8 @@ A powerful and interactive task manager built with **Streamlit**, offering real-
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/task-manager-streamlit.git
-   cd task-manager-streamlit
+   git clone https://github.com/lol782/task-manager-streamlit.git
+   cd task-manager
    ```
 
 2. **Create a virtual environment** (optional but recommended):
